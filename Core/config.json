@@ -37,10 +37,10 @@
             "key_ids" : [3] 
         } , 
         "coder_llm_plotting" : {
-            "provider" : "openrouter" ,
-            "model_name" :"minimax/minimax-m2.5:free",
+                "provider" : "groq" , 
+                "model_name" : "openai/gpt-oss-120b" , 
             "temprature" : 0.3 , 
-            "key_ids" : [2]
+            "key_ids" : [4]
         } , 
         "batch_llms" : {
                 "provider" : "groq" , 

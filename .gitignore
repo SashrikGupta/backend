@@ -20,3 +20,4 @@ temp_*
 # IDE
 .vscode/
 .idea/
+.venv/
