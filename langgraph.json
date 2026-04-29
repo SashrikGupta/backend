@@ -1,0 +1,6 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "main_graph": "Core.Graph.builder:main_graph_object"
+  }
+}

@@ -1,0 +1,58 @@
+{
+    "LLM_CONFIG" : {
+        "qwen_coder" : {
+            "provider" : "groq" ,
+            "model_name" : "qwen/qwen3-32b" ,
+            "temprature" : 0.2 , 
+            "key_ids" : [0]
+        } , 
+        "moonshot_coder" : {
+            "provider" : "groq" ,
+            "model_name" : "moonshotai/kimi-k2-instruct-0905" ,
+            "temprature" : 0.2 , 
+            "key_ids" : [0]
+        } , 
+        "image_llm" : {
+            "provider" : "google" ,
+            "model_name" : "gemini-2.5-flash" ,
+            "temprature" : 0.2 , 
+            "key_ids" : [1]
+        } , 
+        "planner_llm" : {
+            "provider" : "groq" , 
+            "model_name" : "openai/gpt-oss-120b" , 
+            "temprature" : 0.1,
+            "key_ids" : [0]
+        } , 
+        "general_llm" : {
+            "provider" : "groq" , 
+            "model_name" : "llama-3.3-70b-versatile" , 
+            "temprature" : 0.1,
+            "key_ids" : [0]
+        } , 
+        "coder_llm_data_analysis" : {
+            "provider" : "groq" , 
+            "model_name" : "openai/gpt-oss-120b" , 
+            "temprature" : 0.2 , 
+            "key_ids" : [3] 
+        } , 
+        "coder_llm_plotting" : {
+            "provider" : "openrouter" ,
+            "model_name" :"minimax/minimax-m2.5:free",
+            "temprature" : 0.3 , 
+            "key_ids" : [2]
+        } , 
+        "batch_llms" : {
+                "provider" : "groq" , 
+                "model_name" : "openai/gpt-oss-120b" , 
+                "temprature" : 0.2 , 
+                "key_ids" : [1 , 2 , 3 , 4] 
+        } ,
+        "report_llm" : {
+            "provider" : "google" ,
+            "model_name" : "gemini-2.5-flash" ,
+            "temprature" : 0.5 , 
+            "key_ids" : [1]
+        } 
+    }
+}

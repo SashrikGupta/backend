@@ -1,0 +1,22 @@
+# Secrets
+.streamlit/secrets.toml
+.env
+
+# Sessions (ephemeral on Cloud)
+sessions/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp sandbox outputs
+sandbox_output_*
+temp_*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
