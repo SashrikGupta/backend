@@ -8,10 +8,18 @@ Integrates with the LangGraph MainGraph backend to provide:
 - Sidebar session management and resume
 """
 
+import sys
 import os
+from pathlib import Path
+
+# Ensure the project root (backend/) is on sys.path so that
+# "from App.*" and "from Core.*" imports work on Streamlit Cloud.
+_PROJECT_ROOT = str(Path(__file__).resolve().parent.parent)
+if _PROJECT_ROOT not in sys.path:
+    sys.path.insert(0, _PROJECT_ROOT)
+
 import re
 import streamlit as st
-from pathlib import Path
 from dotenv import load_dotenv
 
 # ── Load environment before any Core imports ──
